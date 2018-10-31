@@ -1,0 +1,101 @@
+
+img
+{
+    width: 210px;
+    height: 150px;
+    text-align: center;
+}
+
+.new-cat
+{
+    margin: 30px;
+    width: 210px;
+    border: 1px solid rgb(235, 231, 215);
+    display: inline-block;
+}
+
+.name
+{
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Schoen;
+    font-size: 40px;
+    color: rgb(1, 11, 41);
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.about
+{
+    margin-left: 5px;
+    font-family: Arial, sans-serif;
+    color: rgb(97, 96, 96);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    white-space: nowrap;
+}
+
+p.meet
+{
+    display: none;
+}
+
+.new-cat:hover
+{
+    box-shadow: 0 0 30px 8px rgb(201, 204, 245);
+}
+
+article
+{
+    text-align: center;
+}
+
+input[id='list_of_cats']:checked ~ article section
+{
+    margin: 5% 25%;
+    width: 700px;
+    border: 1px solid rgb(235, 231, 215);
+    display: block;
+}
+
+input[id='list_of_cats']:checked ~ article section img
+{
+    width: 680px;
+    height: 485px;
+    text-align: center;
+}
+
+input[id='list_of_cats']:checked ~ article section a
+{
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Schoen;
+    font-size: 40px;
+    color: rgb(1, 11, 41);
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: block;
+}
+
+input[id='list_of_cats']:checked ~ article section p.meet
+{
+    display: block;
+    margin: 5px 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(97, 96, 96);
+    font-size: 20px;
+    text-align: justify;
+}
+
+input[id='list_of_cats']:checked ~ article section p.about
+{
+    display: none;
+}
